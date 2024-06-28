@@ -23,6 +23,15 @@ resetButton.style.borderRadius = "10px"
 resetButton.style.padding = "10px"
 header.appendChild(resetButton)
 
+resetButton.addEventListener('click', function() {
+    nome.value = ''
+    nota1.value = ''
+    nota2.value = ''
+    nota3.value = ''
+    resultado.textContent = ''
+    passou.textContent = ''
+})
+
 const div = document.createElement('div')
 div.style.width = `1000px`
 div.style.height = `500px`
